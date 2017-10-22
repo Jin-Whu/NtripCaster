@@ -1,5 +1,4 @@
-﻿#include <vld.h>
-#include <string>
+﻿#include <string>
 #include <iostream>
 
 #include "args.hxx"

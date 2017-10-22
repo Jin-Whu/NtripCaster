@@ -87,6 +87,7 @@ void RawRtcm::gensys(raw *buffer, rtcm_t *rtcm, const std::vector<obsd_t*> &epoc
     {
         obs->time = m_epoch;
         sys = satsys(obs->sat, nullptr);
+        if (TYPE_TABLE.find(sys) == TYPE_TABLE.end()) continue;
         epochsys[sys].push_back(obs);
     }
 
